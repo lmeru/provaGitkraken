@@ -57,9 +57,8 @@ def get_AOI_from_xy(img_ds, x, y, radius=1):
     AOI_ds = img_ds.isel(x=x_range, y=y_range)
     return AOI_ds
 
-def get_mintemp_from(img, chn): 
-    """Returns the minimum temperature in the Area Of Interest xarray dataset
-    centered on image img in channel chn.
+def  get_mintemp_from (img,chn) : 
+    """Returns the minimum temperature in the Area Of Interest xarray dataset centered on image img in channel chn.
     
     Parameters
     ----------    
